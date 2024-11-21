@@ -15,3 +15,32 @@ loop code for 999 {
     log(code)
 }
 ```
+
+converts into..
+
+### main.cpp:
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+    int password = 120;
+    
+    for (int code = 0; code < 999; code++) {
+    if (code == password) {
+    cout << "The password was: " << code << "" << endl;
+    break;
+    }
+    cout << code << endl;
+    }
+    return 0;
+}
+
+```
+
+or optimized version (compress size by 40%, working a little faster)
+
+### main.cpp:
+```cpp
+#include <iostream>
+ using namespace std;int main(){int password=120;for(int code=0;code<999;code++){if(code == password){cout<<"The password was: "<<code<<endl;break;}cout<<code<<endl;}return 0;}
+```
