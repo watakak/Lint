@@ -22,15 +22,16 @@ loop code for 999 {
 ```cpp
 #include <iostream>
 using namespace std;
+
 int main() {
     int password = 120;
     
     for (int code = 0; code < 999; code++) {
-    if (code == password) {
-    cout << "The password was: " << code << "" << endl;
-    break;
-    }
-    cout << code << endl;
+        if (code == password) {
+            cout << "The password was: " << code << "" << endl;
+            break;
+        }
+        cout << code << endl;
     }
     return 0;
 }
