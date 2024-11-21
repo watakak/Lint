@@ -16,7 +16,7 @@ loop code for 999 {
 }
 ```
 
-converts into..
+## converts into..
 
 ### main.cpp:
 ```cpp
@@ -39,7 +39,7 @@ int main() {
 
 or optimized version (compress size by 40%, working a little faster)
 
-### main.cpp:
+### main.cpp (optimized):
 ```cpp
 #include <iostream>
  using namespace std;int main(){int password=120;for(int code=0;code<999;code++){if(code == password){cout<<"The password was: "<<code<<endl;break;}cout<<code<<endl;}return 0;}
